@@ -9,7 +9,7 @@ Future<void> handleScan(BuildContext context, String code) async {
   await _player.play(AssetSource('sounds/beep.mp3'));
 
   // при необходимости подмените адрес на свой
-  final url = "http://192.168.0.127:5002/edit/$code";
+  final url = "http://192.168.0.144:5002/edit/$code";
 
   await Navigator.push(
     context,
